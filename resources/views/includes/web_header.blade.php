@@ -48,7 +48,7 @@
                                     <a href="index.php">Inicio</a>
                                 </li>
                                 <li class="has-submenu">
-                                    <a href="quienes-somos.php">¿Quiénes Somos?</a>
+                                    <a href="{{ route('quienes_somos') }}">¿Quiénes Somos?</a>
                                     <!-- <ul>
                                         <li>
                                             <a href="quienes-somos.php#historia">Historia</a>

@@ -20,4 +20,10 @@ class WebController extends Controller
             'nosotros'  =>$nosotros
         ]);
     }
+
+    public function quienes_somos()
+    {
+        return view('web.nosotros');
+
+    }
 }
