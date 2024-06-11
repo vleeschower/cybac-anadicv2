@@ -45,7 +45,7 @@
                         <div class="navbar-collapse collapse">
                             <ul class="nav navbar-nav">
                                 <li class="mega-menu">
-                                    <a href="index.php">Inicio</a>
+                                    <a href="{{ route('index') }}">Inicio</a>
                                 </li>
                                 <li class="has-submenu">
                                     <a href="{{ route('quienes_somos') }}">¿Quiénes Somos?</a>
@@ -62,16 +62,16 @@
                                     </ul> -->
                                 </li>
                                 <li>
-                                    <a href="noticias.php">Noticias</a>
+                                    <a href="{{ route('noticias') }}">Noticias</a>
                                 </li>
                                 <li>
-                                    <a href="afiliados.php">Afiliados</a>
+                                    <a href="{{ route('afiliados') }}">Afiliados</a>
                                 </li>
                                 <!-- <li>
                                     <a href="universidad.php">Universidad</a>
                                 </li> -->
                                 <li>
-                                    <a href="contacto.php">Contacto</a>
+                                    <a href="{{ route('contacto') }}">Contacto</a>
                                 </li>                                
                             </ul>
                             <div class="bg-white hide-show-content no-display header-contact-content">

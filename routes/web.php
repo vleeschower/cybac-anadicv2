@@ -22,3 +22,9 @@ require __DIR__.'/admin.php';
 Route::get('/', [App\Http\Controllers\WebController::class, 'index'])->name('index');
 
 Route::get('/quienes_somos',[WebController::class,'quienes_somos'])->name('quienes_somos');
+
+Route::get('/noticias',[WebController::class,'noticias'])->name('noticias');
+
+Route::get('/afiliados',[WebController::class,'afiliados'])->name('afiliados');
+
+Route::get('/contacto',[WebController::class,'contacto'])->name('contacto');
