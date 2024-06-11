@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">Afíliate con nosotros
-                <a class="black" href="registrate.php">Ahora</a>
+                <a class="black" href="{{ route('registro') }}">Ahora</a>
             </div>
         </div>
     </div>

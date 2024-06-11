@@ -24,25 +24,26 @@ class WebController extends Controller
     public function quienes_somos()
     {
         return view('web.nosotros');
-
     }
 
     public function noticias()
     {
         return view('web.noticias');
-
     }
 
     public function afiliados()
     {
         return view('web.afiliados');
-
     }
 
     public function contacto()
     {
         return view('web.contacto');
+    }
 
+    public function registro()
+    {
+        return view('web.registro');
     }
 
 }
