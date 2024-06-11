@@ -2,8 +2,8 @@
 
 @section('main') 
 <div id="slider" style="width:100%;height:600px;margin:0 auto;margin-bottom: 0px;">
-    @foreach ($slider as $item) {
-        @if($item->tipo == "Imagen"){?>
+    @foreach ($slider as $item) 
+        @if($item->tipo == "1")
             <div class="ls-slide" data-ls="bgsize:cover; bgposition:50% 50%; duration:4000; transition2d:104; kenburnsscale:1.00;">
                 <img src="{{ asset('img/slider/'.$item->imagen) }}" class="ls-bg" alt="" />
                 <img src="{{ asset('img/slider/'.$item->imagen) }}" class="ls-tn" alt="Slide thumbnail">
@@ -51,7 +51,7 @@
                         <div class="box">
                             <div class="frame">
                                 <a href="noticia.php?not=5">
-                                    <img src="img/noticias/thumbs/5c05c8de15a34.PNG" alt="img" class="img-responsive">
+                                    <img src="img/noticias/thumbs/5c05c8de15a34.jpg" alt="img" class="img-responsive">
                                 </a>
                             </div>
                             <div class="text-box">
@@ -104,7 +104,7 @@
                         <div class="box">
                             <div class="frame">
                                 <a href="noticia.php?not=7">
-                                    <img src="img/noticias/thumbs/5f21f4c45104b.49.46 AM.PNG" alt="img"
+                                    <img src="img/noticias/thumbs/5f21f4c45104b.49.46 AM.jpeg" alt="img"
                                         class="img-responsive">
                                 </a>
                             </div>

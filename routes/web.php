@@ -28,3 +28,4 @@ Route::get('/noticias',[WebController::class,'noticias'])->name('noticias');
 Route::get('/afiliados',[WebController::class,'afiliados'])->name('afiliados');
 
 Route::get('/contacto',[WebController::class,'contacto'])->name('contacto');
+

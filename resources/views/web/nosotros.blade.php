@@ -5,6 +5,6 @@
         <h1>¿Quiénes Somos?</h1>
 
     </div>
-
+    
 </section>
 @endsection
