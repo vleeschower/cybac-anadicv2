@@ -13,7 +13,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-4 widget bottom-xs-pad-20">
-                    <img src="img/footer_header_anadicchiapas.png" alt="">
+                    <img src="img/logob.png" alt="">
                     <p>Somos una asociación que promueve el liderazgo Tecnológico, Empresarial y de Conocimiento en
                         Chiapas,
                         generando oportunidades de negocio con nuestros Asociados.
@@ -21,13 +21,13 @@
                     <p>
                         <strong><span class="icon-location"></span>
                         </strong> Anadic.com<br />
-                        Central Norte #225<br />
-                        Colonia Centro | C.P. 29000<br />
-                        Tuxtla Gutiérrez, Chiapas
+                        Primavera 237-Int. 1<br />
+                        Jardines de Tuxtla<br />
+                        29020 Tuxtla Gutiérrez, Chis.
                     </p>
                     <p>
-                        <strong><span class="icon-phone"></strong> 01(961)6112500
-                        <br /><span class="icon-device-mobile"></span>01(961)6112620
+                        <strong><span class="icon-phone"></strong> 961 615 7858
+                        <br /><span class="icon-device-mobile"></span> 961 615 7858
                     </p>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 widget">
@@ -76,7 +76,7 @@
                     derechos
                     reservados.
                     <br />
-                    <p>Hosting y Diseño / <a href="#">CYBAC</a></p>
+                    <p>Hosting y Diseño / <a href="https://www.grupocybac.com/">CYBAC</a></p>
                 </div>
                 <div class="col-xs-2 col-sm-6 col-md-6 text-right page-scroll gray-bg icons-circle i-3x">
                     <a href="#page">

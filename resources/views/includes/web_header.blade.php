@@ -38,8 +38,8 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span></button>
                             <br>
-                            <a class="navbar-brand" href="index.php">
-                                <img class="site_logo" alt="Site Logo" width="190" height="86" src="{{ asset('img/logoa.png') }}" />
+                            <a class="navbar-brand" href="{{ route('index') }}">
+                                <img class="site_logo" alt="Site Logo" width="190" height="86" src="{{ asset('img/logob.png') }}" />
                             </a>
                         </div>
                         <div class="navbar-collapse collapse">
