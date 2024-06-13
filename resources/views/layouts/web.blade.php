@@ -9,7 +9,7 @@
     <meta name="description" content="Nadie es mejor que todos juntos" />
     <meta name="author" content="CYBAC" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <title>{{ $title ?? "Inicio || ANADIC" }}</title>
+    <title>{{ $title ?? "ANADIC | CHIAPAS" }}</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.png" />
     <!-- Font -->

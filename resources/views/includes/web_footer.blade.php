@@ -72,11 +72,11 @@
             <div class="row">
                 <div class="col-xs-10 col-sm-6 col-md-6"> Asociación de Distribuidores de Tecnología Informatica de
                     Tuxtla
-                    Gutiérrez, A.C. <br />Copyright © 2018 <a href="AnadicChiapas.com.mx">AnadicChiapas</a>.Todos los
+                    Gutiérrez, A.C. <br />Copyright © 2018 <a href="{{ route('index') }}">AnadicChiapas</a>.Todos los
                     derechos
                     reservados.
                     <br />
-                    <p>Hosting y Diseño / <a href="https://www.grupocybac.com/">CYBAC</a></p>
+                    <p>Hosting y Diseño / <a href="https://www.grupocybac.com/" target="_blank">CYBAC</a></p>
                 </div>
                 <div class="col-xs-2 col-sm-6 col-md-6 text-right page-scroll gray-bg icons-circle i-3x">
                     <a href="#page">

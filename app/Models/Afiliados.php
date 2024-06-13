@@ -11,5 +11,5 @@ class Afiliados extends Model
 
     protected $table="afiliados";
 
-    protected $fillable = ['nombre', 'correo', 'telefono', 'calles', 'sepomex_id', 'num_id', 'num_ext', 'referencias', 'logo', 'web'];
+    protected $fillable = ['nombre', 'correo', 'telefono', 'calles', 'sepomex_id', 'num_int', 'num_ext', 'referencias', 'logo', 'web'];
 }
