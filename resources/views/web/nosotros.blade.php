@@ -8,7 +8,7 @@
             <div class="container">
                 <ul class="breadcrumb">
                     <li>
-                        <a href=".">Inicio</a>
+                        <a href="{{ route('index') }}">Inicio</a>
                     </li>
                     <li>
                         Quiénes Somos</a>
@@ -69,7 +69,11 @@
                             <p>Valores</p>
                         </h2>
                         <div class="entry-content">
-                            {!! $nosotros->valores !!}
+                            <ul>
+                                @foreach(explode("\n", $nosotros->valores) as $valor)
+                                    <p>{{ trim($valor) }}</p>
+                                @endforeach
+                            </ul>
                         </div>
                     </div>
                 </div>

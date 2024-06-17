@@ -49,17 +49,6 @@
                                 </li>
                                 <li class="has-submenu">
                                     <a href="{{ route('quienes_somos') }}">¿Quiénes Somos?</a>
-                                    <!-- <ul>
-                                        <li>
-                                            <a href="quienes-somos.php#historia">Historia</a>
-                                        </li>
-                                        <li>
-                                            <a href="objetivos.php">Objetivos</a>
-                                        </li>
-                                        <li>
-                                            <a href="organizacion.php">Organización</a>
-                                        </li>
-                                    </ul> -->
                                 </li>
                                 <li>
                                     <a href="{{ route('noticias') }}">Noticias</a>
@@ -67,9 +56,6 @@
                                 <li>
                                     <a href="{{ route('afiliados') }}">Afiliados</a>
                                 </li>
-                                <!-- <li>
-                                    <a href="universidad.php">Universidad</a>
-                                </li> -->
                                 <li>
                                     <a href="{{ route('contacto') }}">Contacto</a>
                                 </li>                                

@@ -146,7 +146,7 @@
                 <div class="owl-carousel navigation-1" data-pagination="false" data-items="6" data-autoplay="true"
                     data-navigation="false">
                     @foreach ($afiliados as $item)
-                    <a href="{{ $item->web }}" target="_blank">
+                    <a href="{{ $item->web }}" target="_blank" class="zoom-container">
                         <img src="{{ asset('img/afiliados/'.$item->logo) }}">
                     </a>
                     @endforeach

@@ -120,8 +120,18 @@
 *******************************************************************************/
 
 /* zoom en imagenes afiliados 20% */
-.img-fluid:hover {
-	transform: scale(1.2);
+.zoom-container {
+    overflow: hidden;
+    display: inline-block;
+}
+
+.zoom-container img {
+    transition: transform 0.3s ease;
+	width: 100%;
+}
+
+.zoom-container img:hover {
+    transform: scale(1.2);
 }
 /*---*/
 
