@@ -11,8 +11,8 @@
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                 <a href="{{ $item->web }}" target="_blank" class="zoom-container">
                     <img src="{{ asset('img/afiliados/'.$item->logo) }}">
+                    <h3 class="text-center">{{ $item->nombre }}</h3>
                 </a>
-                <h3 class="text-center">{{ $item->nombre }}</h3>
             </div>
             @endforeach
         </div>

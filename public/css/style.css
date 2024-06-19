@@ -119,19 +119,32 @@
   Global Style
 *******************************************************************************/
 
-/* zoom en imagenes afiliados 20% */
+/* zoom en imagenes afiliados */
 .zoom-container {
     overflow: hidden;
     display: inline-block;
+	position: relative;
 }
 
 .zoom-container img {
     transition: transform 0.3s ease;
 	width: 100%;
+	position: relative;
+    z-index: 1;
 }
 
 .zoom-container img:hover {
     transform: scale(1.2);
+}
+
+.zoom-container:hover h3 {
+    color: #1044A3;
+}
+
+.zoom-container h3 {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
 }
 /*---*/
 
