@@ -148,6 +148,14 @@
 }
 /*---*/
 
+.image-jump img {
+    transition: transform 0.2s ease-in-out;
+}
+
+.image-jump img:hover {
+    transform: translateY(-10px);
+}
+
 body {
   font-family: 'Arimo', sans-serif;
   height: 100%;

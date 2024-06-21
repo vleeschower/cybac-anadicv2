@@ -13,14 +13,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-4 widget bottom-xs-pad-20">
-                    <img src="img/logob.png" alt="">
+                    <a href="{{ route('index') }}" class="image-jump">
+                        <img src="img/logob.png" alt="Site logo">
+                    </a>
                     <p>Somos una asociación que promueve el liderazgo Tecnológico, Empresarial y de Conocimiento en
                         Chiapas,
                         generando oportunidades de negocio con nuestros Asociados.
                     </p>
                     <p>
-                        <strong><span class="icon-location"></span>
-                        </strong> Anadic.com<br />
+                        <a href="https://www.google.com.mx/maps/search/Primavera+237-Int.+1+Jardines+de+Tuxtla+29020+Tuxtla+Guti%C3%A9rrez,+Chis./@16.7437597,-93.1589162,13z/data=!3m1!4b1?entry=ttu" target="_blank">
+                            <strong><span class="icon-location"></span></strong> ANADIC CHIAPAS
+                        </a><br />
                         Primavera 237-Int. 1<br />
                         Jardines de Tuxtla<br />
                         29020 Tuxtla Gutiérrez, Chis.
@@ -72,7 +75,7 @@
             <div class="row">
                 <div class="col-xs-10 col-sm-6 col-md-6"> Asociación de Distribuidores de Tecnología Informatica de
                     Tuxtla
-                    Gutiérrez, A.C. <br />Copyright © 2018 <a href="{{ route('index') }}">AnadicChiapas</a>.Todos los
+                    Gutiérrez, A.C. <br />Copyright © 2024 <a href="{{ route('index') }}">ANADIC CHIAPAS</a>.Todos los
                     derechos
                     reservados.
                     <br />
