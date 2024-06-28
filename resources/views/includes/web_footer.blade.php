@@ -12,7 +12,7 @@
     <div class="footer-widget">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-4 widget bottom-xs-pad-20">
+                <div class="col-xs-12 col-sm-6 col-md-4 widget bottom-xs-pad-20 text-left">
                     <a href="{{ route('index') }}" class="image-jump">
                         <img src="img/logob.png" alt="Site logo">
                     </a>

@@ -41,12 +41,12 @@
 <section id="who-we-are" class="page-section no-pad light-bg border-tb">
     <div class="container who-we-are">
         <div class="row">
-            <div class="col-md-12 pad-60" data-animation="fadeInLeft">
-                <div class="section-title text-left" data-animation="fadeInUp">
+            <div class="col-md-12 pad-50" data-animation="fadeInUp">
+                <div class="section-title text-center" data-animation="fadeInUp">
                     <!-- Title -->
                     <h2 class="title">ANADIC NOTICIAS</h2>
                 </div>
-                <div class="col-md-12" style="margin-top:5%;">
+                <div class="col-md-12" style="margin-top:5%;" data-animation="fadeInUp">
                     <div class="row-md-3 col-sm-4">
                         <div class="box">
                             <div class="frame">
@@ -125,23 +125,23 @@
                             </div>
                         </div>
                     </div>
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination">
+                            <li class="active"><a>1</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav aria-label="Page navigation">
-                    <ul class="pagination">
-                        <li class="active"><a>1</a></li>
-                    </ul>
-                </nav>
             </div>
         </div>
     </div>
 </section>
-<section id="clients" class="page-section light-bg border-tb tb-pad-20">
+<section id="clients" class="page-section light-bg border-tb tb-pad-50">
     <div class="container" data-animation="fadeInUp">
         <div class="section-title text-center" data-animation="fadeInUp">
             <!-- Heading -->
             <h2 class="title">Nuestros Afiliados</h2>
         </div>
-        <div class="row">
+        <div class="row" data-animation="fadeInUp">
             <div class="col-md-12 text-center">
                 <div class="owl-carousel navigation-1" data-pagination="false" data-items="6" data-autoplay="true"
                     data-navigation="false">

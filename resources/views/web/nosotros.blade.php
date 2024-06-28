@@ -3,7 +3,6 @@
 <section id="title" class="page-header">
     <div class="container">
         <h1 class="title">¿Quiénes Somos?</h1>
-
         <div class="breadcrumb-box">
             <div class="container">
                 <ul class="breadcrumb">
@@ -16,10 +15,8 @@
                 </ul>
             </div>
         </div>
-
     </div>
 </section>
-
 <!-- page-header -->
 <section class="page-section">
     <div class="container">
@@ -27,7 +24,7 @@
             <div class="col-xs-12">
                 <div class="row">
                     <div class="col-md-6 text-justify">
-                        {!! $nosotros->introduccion !!}
+                        <p>{!! $nosotros->introduccion !!}</p>
                     </div>
                     <div class="col-md-6">
                         <img src="{{ asset('images/'.$nosotros->imagen) }}" alt="" />
@@ -42,33 +39,41 @@
     <div class="container who-we-are">
         <div class="row">
             <div class="col-md-12 pad-60" data-animation="fadeInLeft">
-                <div class="section-title text-left" data-animation="fadeInUp">
+                <div class="section-title text-center" data-animation="fadeInUp">
                     <!-- Title -->
                     <h2 class="title">ANADIC CHIAPAS</h2>
                 </div>
-                <div class="owl-carousel pagination-1 dark-switch" data-pagination="true" data-autoplay="true"
-                    data-navigation="false" data-singleitem="true" data-animation="fadeInUp">
-                    <div class="item text-center">
-                        <h2 class="entry-title">
-                            <p>Misión</p>
-                        </h2>
-                        <div class="entry-content">
-                            {!! $nosotros->mision !!}
+                <div class="card-container">
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fa fa-flag"></i>
+                        </div>
+                        <div class="card-title">
+                            <h2>Misión</h2>
+                        </div>
+                        <div class="card-content">
+                            <p>{!! $nosotros->mision !!}</p>
                         </div>
                     </div>
-                    <div class="item text-center">
-                        <h2 class="entry-title">
-                            <p>Visión</p>
-                        </h2>
-                        <div class="entry-content">
-                            {!! $nosotros->vision !!}
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fa fa-eye"></i>
+                        </div>
+                        <div class="card-title">
+                            <h2>Visión</h2>
+                        </div>
+                        <div class="card-content">
+                            <p>{!! $nosotros->vision !!}</p>
                         </div>
                     </div>
-                    <div class="item text-center">
-                        <h2 class="entry-title">
-                            <p>Valores</p>
-                        </h2>
-                        <div class="entry-content">
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fa fa-diamond"></i>
+                        </div>
+                        <div class="card-title">
+                            <h2>Valores</h2>
+                        </div>
+                        <div class="card-content">
                             <ul>
                                 @foreach(explode("\n", $nosotros->valores) as $valor)
                                     <p>{{ trim($valor) }}</p>
