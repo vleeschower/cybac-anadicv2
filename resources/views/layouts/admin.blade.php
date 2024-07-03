@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>{{ $title ?? "Panel Administrativo :: Anadic" }}</title>
+    <title>{{ $title ?? "Panel Administrativo | ANADIC" }}</title>
 
     <!-- General CSS Files -->
     <link rel="stylesheet" href="{{ asset('admin/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('admin/all.css') }}">
     <link rel="stylesheet" href="{{ asset('admin/style.css') }}">
     <link rel="stylesheet" href="{{ asset('admin/components.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
 </head>
 
 <body>
@@ -21,14 +22,14 @@
                 <form class="form-inline mr-auto">
                     <ul class="navbar-nav mr-3">
                         <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i
-                                    class="fas fa-bars"></i></a></li>
+                                    class="fa fa-bars"></i></a></li>
                         <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i
-                                    class="fas fa-search"></i></a></li>
+                                    class="fa fa-search"></i></a></li>
                     </ul>
                     <div class="search-element">
                         <input class="form-control" type="search" placeholder="Search" aria-label="Search"
                             data-width="250">
-                        <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+                        <button class="btn" type="submit"><i class="fa fa-search"></i></button>
                         <div class="search-backdrop"></div>
                         <div class="search-result">
                             <div class="search-header">
@@ -36,15 +37,15 @@
                             </div>
                             <div class="search-item">
                                 <a href="#">How to hack NASA using CSS</a>
-                                <a href="#" class="search-close"><i class="fas fa-times"></i></a>
+                                <a href="#" class="search-close"><i class="fa fa-times"></i></a>
                             </div>
                             <div class="search-item">
                                 <a href="#">Kodinger.com</a>
-                                <a href="#" class="search-close"><i class="fas fa-times"></i></a>
+                                <a href="#" class="search-close"><i class="fa fa-times"></i></a>
                             </div>
                             <div class="search-item">
                                 <a href="#">#Stisla</a>
-                                <a href="#" class="search-close"><i class="fas fa-times"></i></a>
+                                <a href="#" class="search-close"><i class="fa fa-times"></i></a>
                             </div>
                             <div class="search-header">
                                 Result
@@ -76,7 +77,7 @@
                             <div class="search-item">
                                 <a href="#">
                                     <div class="search-icon bg-danger text-white mr-3">
-                                        <i class="fas fa-code"></i>
+                                        <i class="fa fa-code"></i>
                                     </div>
                                     Stisla Admin Template
                                 </a>
@@ -84,7 +85,7 @@
                             <div class="search-item">
                                 <a href="#">
                                     <div class="search-icon bg-primary text-white mr-3">
-                                        <i class="fas fa-laptop"></i>
+                                        <i class="fa fa-laptop"></i>
                                     </div>
                                     Create a new Homepage Design
                                 </a>
@@ -94,9 +95,9 @@
                 </form>
                 <ul class="navbar-nav navbar-right">
                     <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
-                            class="nav-link nav-link-lg message-toggle beep"><i class="far fa-envelope"></i></a>
+                            class="nav-link nav-link-lg message-toggle beep"><i class="fa fa-envelope"></i></a>
                         <div class="dropdown-menu dropdown-list dropdown-menu-right">
-                            <div class="dropdown-header">Messages
+                            <div class="dropdown-header">Mensajes
                                 <div class="float-right">
                                     <a href="#">Mark All As Read</a>
                                 </div>
@@ -156,14 +157,14 @@
                                 </a>
                             </div>
                             <div class="dropdown-footer text-center">
-                                <a href="#">View All <i class="fas fa-chevron-right"></i></a>
+                                <a href="#">View All <i class="fa fa-chevron-right"></i></a>
                             </div>
                         </div>
                     </li>
                     <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
-                            class="nav-link notification-toggle nav-link-lg beep"><i class="far fa-bell"></i></a>
+                            class="nav-link notification-toggle nav-link-lg beep"><i class="fa fa-bell"></i></a>
                         <div class="dropdown-menu dropdown-list dropdown-menu-right">
-                            <div class="dropdown-header">Notifications
+                            <div class="dropdown-header">Notificaciones
                                 <div class="float-right">
                                     <a href="#">Mark All As Read</a>
                                 </div>
@@ -171,7 +172,7 @@
                             <div class="dropdown-list-content dropdown-list-icons">
                                 <a href="#" class="dropdown-item dropdown-item-unread">
                                     <div class="dropdown-item-icon bg-primary text-white">
-                                        <i class="fas fa-code"></i>
+                                        <i class="fa fa-code"></i>
                                     </div>
                                     <div class="dropdown-item-desc">
                                         Template update is available now!
@@ -180,7 +181,7 @@
                                 </a>
                                 <a href="#" class="dropdown-item">
                                     <div class="dropdown-item-icon bg-info text-white">
-                                        <i class="far fa-user"></i>
+                                        <i class="fa fa-user"></i>
                                     </div>
                                     <div class="dropdown-item-desc">
                                         <b>You</b> and <b>Dedik Sugiharto</b> are now friends
@@ -189,7 +190,7 @@
                                 </a>
                                 <a href="#" class="dropdown-item">
                                     <div class="dropdown-item-icon bg-success text-white">
-                                        <i class="fas fa-check"></i>
+                                        <i class="fa fa-check"></i>
                                     </div>
                                     <div class="dropdown-item-desc">
                                         <b>Kusnaedi</b> has moved task <b>Fix bug header</b> to <b>Done</b>
@@ -198,7 +199,7 @@
                                 </a>
                                 <a href="#" class="dropdown-item">
                                     <div class="dropdown-item-icon bg-danger text-white">
-                                        <i class="fas fa-exclamation-triangle"></i>
+                                        <i class="fa fa-exclamation-triangle"></i>
                                     </div>
                                     <div class="dropdown-item-desc">
                                         Low disk space. Let's clean it!
@@ -207,7 +208,7 @@
                                 </a>
                                 <a href="#" class="dropdown-item">
                                     <div class="dropdown-item-icon bg-info text-white">
-                                        <i class="fas fa-bell"></i>
+                                        <i class="fa fa-bell"></i>
                                     </div>
                                     <div class="dropdown-item-desc">
                                         Welcome to Stisla template!
@@ -216,29 +217,29 @@
                                 </a>
                             </div>
                             <div class="dropdown-footer text-center">
-                                <a href="#">View All <i class="fas fa-chevron-right"></i></a>
+                                <a href="#">View All <i class="fa fa-chevron-right"></i></a>
                             </div>
                         </div>
                     </li>
                     <li class="dropdown"><a href="#" data-toggle="dropdown"
                             class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-                            <img alt="image" src="../assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
-                            <div class="d-sm-none d-lg-inline-block">Hi, Ujang Maman</div>
+                            <i class="fa fa-user"></i>
+                            <div class="d-sm-none d-lg-inline-block"> Hi, Ujang Maman</div>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
                             <div class="dropdown-title">Logged in 5 min ago</div>
                             <a href="features-profile.html" class="dropdown-item has-icon">
-                                <i class="far fa-user"></i> Profile
+                                <i class="fa fa-user"></i> Perfil
                             </a>
                             <a href="features-activities.html" class="dropdown-item has-icon">
-                                <i class="fas fa-bolt"></i> Activities
+                                <i class="fa fa-bolt"></i> Actividades
                             </a>
                             <a href="features-settings.html" class="dropdown-item has-icon">
-                                <i class="fas fa-cog"></i> Settings
+                                <i class="fa fa-cog"></i> Configuración
                             </a>
                             <div class="dropdown-divider"></div>
                             <a href="#" class="dropdown-item has-icon text-danger">
-                                <i class="fas fa-sign-out-alt"></i> Logout
+                                <i class="fa fa-sign-out"></i> Salir
                             </a>
                         </div>
                     </li>
@@ -247,16 +248,16 @@
             <div class="main-sidebar">
                 <aside id="sidebar-wrapper">
                     <div class="sidebar-brand">
-                        <a href="index.html">Stisla</a>
+                        <a href="index.html">PANEL ADMINISTRATIVO</a>
                     </div>
                     <div class="sidebar-brand sidebar-brand-sm">
-                        <a href="index.html">St</a>
+                        <a href="index.html">PA</a>
                     </div>
                     <ul class="sidebar-menu">
                         <li class="menu-header">Dashboard</li>
                         <li class="nav-item dropdown active">
                             <a href="#" class="nav-link has-dropdown"><i
-                                    class="fas fa-fire"></i><span>Dashboard</span></a>
+                                    class="fa fa-fire"></i><span>Dashboard</span></a>
                             <ul class="dropdown-menu">
                                 <li><a class="nav-link" href="index-0.html">General Dashboard</a></li>
                                 <li class="active"><a class="nav-link" href="index.html">Ecommerce Dashboard</a></li>
@@ -265,17 +266,17 @@
                         <li class="menu-header">Starter</li>
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i
-                                    class="fas fa-columns"></i> <span>Layout</span></a>
+                                    class="fa fa-columns"></i> <span>Layout</span></a>
                             <ul class="dropdown-menu">
                                 <li><a class="nav-link" href="layout-default.html">Default Layout</a></li>
                                 <li><a class="nav-link" href="layout-transparent.html">Transparent Sidebar</a></li>
                                 <li><a class="nav-link" href="layout-top-navigation.html">Top Navigation</a></li>
                             </ul>
                         </li>
-                        <li><a class="nav-link" href="blank.html"><i class="far fa-square"></i> <span>Blank
+                        <li><a class="nav-link" href="blank.html"><i class="fa fa-square"></i> <span>Blank
                                     Page</span></a></li>
                         <li class="nav-item dropdown">
-                            <a href="#" class="nav-link has-dropdown"><i class="fas fa-th"></i>
+                            <a href="#" class="nav-link has-dropdown"><i class="fa fa-th"></i>
                                 <span>Bootstrap</span></a>
                             <ul class="dropdown-menu">
                                 <li><a class="nav-link" href="bootstrap-alert.html">Alert</a></li>
@@ -302,7 +303,7 @@
                         </li>
                         <li class="menu-header">Stisla</li>
                         <li class="nav-item dropdown">
-                            <a href="#" class="nav-link has-dropdown"><i class="fas fa-th-large"></i>
+                            <a href="#" class="nav-link has-dropdown"><i class="fa fa-th-large"></i>
                                 <span>Components</span></a>
                             <ul class="dropdown-menu">
                                 <li><a class="nav-link" href="components-article.html">Article</a></li>
@@ -323,7 +324,7 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a href="#" class="nav-link has-dropdown"><i class="far fa-file-alt"></i>
+                            <a href="#" class="nav-link has-dropdown"><i class="fa fa-file-alt"></i>
                                 <span>Forms</span></a>
                             <ul class="dropdown-menu">
                                 <li><a class="nav-link" href="forms-advanced-form.html">Advanced Form</a></li>
@@ -332,7 +333,7 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a href="#" class="nav-link has-dropdown"><i class="fas fa-map-marker-alt"></i> <span>Google
+                            <a href="#" class="nav-link has-dropdown"><i class="fa fa-map-marker-alt"></i> <span>Google
                                     Maps</span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="gmaps-advanced-route.html">Advanced Route</a></li>
@@ -346,7 +347,7 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a href="#" class="nav-link has-dropdown"><i class="fas fa-plug"></i>
+                            <a href="#" class="nav-link has-dropdown"><i class="fa fa-plug"></i>
                                 <span>Modules</span></a>
                             <ul class="dropdown-menu">
                                 <li><a class="nav-link" href="modules-calendar.html">Calendar</a></li>
@@ -365,7 +366,7 @@
                         </li>
                         <li class="menu-header">Pages</li>
                         <li class="nav-item dropdown">
-                            <a href="#" class="nav-link has-dropdown"><i class="far fa-user"></i> <span>Auth</span></a>
+                            <a href="#" class="nav-link has-dropdown"><i class="fa fa-user"></i> <span>Auth</span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="auth-forgot-password.html">Forgot Password</a></li>
                                 <li><a href="auth-login.html">Login</a></li>
@@ -375,7 +376,7 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a href="#" class="nav-link has-dropdown"><i class="fas fa-exclamation"></i>
+                            <a href="#" class="nav-link has-dropdown"><i class="fa fa-exclamation"></i>
                                 <span>Errors</span></a>
                             <ul class="dropdown-menu">
                                 <li><a class="nav-link" href="errors-503.html">503</a></li>
@@ -385,7 +386,7 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a href="#" class="nav-link has-dropdown"><i class="fas fa-bicycle"></i>
+                            <a href="#" class="nav-link has-dropdown"><i class="fa fa-bicycle"></i>
                                 <span>Features</span></a>
                             <ul class="dropdown-menu">
                                 <li><a class="nav-link" href="features-activities.html">Activities</a></li>
@@ -398,7 +399,7 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a href="#" class="nav-link has-dropdown"><i class="fas fa-ellipsis-h"></i>
+                            <a href="#" class="nav-link has-dropdown"><i class="fa fa-ellipsis-h"></i>
                                 <span>Utilities</span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="utilities-contact.html">Contact</a></li>
@@ -406,7 +407,7 @@
                                 <li><a href="utilities-subscribe.html">Subscribe</a></li>
                             </ul>
                         </li>
-                        <li><a class="nav-link" href="credits.html"><i class="fas fa-pencil-ruler"></i>
+                        <li><a class="nav-link" href="credits.html"><i class="fa fa-pencil-ruler"></i>
                                 <span>Credits</span></a></li>
                     </ul>
 
@@ -426,7 +427,7 @@
             </div>
             <footer class="main-footer">
                 <div class="footer-left">
-                    Anadic Chiapas 2021 <div class="bullet"></div>  Hosting y Diseño <a href="https://grupocybac.com" target="_blank">Grupo Cybac</a>
+                    ANADIC Chiapas 2021 <div class="bullet"></div>  Hosting y Diseño <a href="https://grupocybac.com" target="_blank">Grupo Cybac</a>
                 </div>
                 <div class="footer-right">2.0</div>
             </footer>

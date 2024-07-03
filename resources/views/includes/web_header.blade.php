@@ -7,10 +7,10 @@
             <div class="col-sm-12">
                 <div class="top-contact link-hover-black">
                     <a href="#">
-                        <i class="fa fa-phone"></i>01(961)6112500
+                        <i class="fa fa-phone"></i> 01(961)6112500
                     </a>
                     <a href="#">
-                        <i class="fa fa-envelope"></i>contacto@anadicchiapas.com.mx
+                        <i class="fa fa-envelope"></i> contacto@anadicchiapas.com.mx
                     </a>
                 </div>
                 <div class="top-social-icon icons-hover-black">

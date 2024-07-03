@@ -30,3 +30,5 @@ Route::get('/afiliados',[WebController::class,'afiliados'])->name('afiliados');
 Route::get('/contacto',[WebController::class,'contacto'])->name('contacto');
 
 Route::get('/registro',[WebController::class,'registro'])->name('registro');
+
+Route::get('/administrador',[WebController::class,'administrador'])->name('administrador');

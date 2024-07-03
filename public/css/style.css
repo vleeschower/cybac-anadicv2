@@ -813,7 +813,7 @@ i.fa-1x{
 /* Icon Hover */
 .link-hover-black a:hover,
 .icons-hover-black i:hover{
-	color:#171717;
+	color:#1a67f5;
 }
 
 /* Border */
@@ -4008,7 +4008,7 @@ ul.tags li{
   padding: 8px 12px;
 }
 .newsletter .submit.bg-color:hover{
-	background-color: #333333;
+	background-color: #1a67f5;
 }
 .newsletter .has-feedback .form-control-feedback {
     right: 35px;

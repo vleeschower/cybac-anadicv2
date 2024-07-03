@@ -60,4 +60,9 @@ class WebController extends Controller
         ]);
     }
 
+    public function administrador()
+    {
+        return view('auth.login');
+    }
+
 }
