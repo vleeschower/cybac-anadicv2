@@ -46,4 +46,9 @@ class WebController extends Controller
         return view('web.registro');
     }
 
+    public function prueba()
+    {
+        return view('web.prueba');
+    }
+
 }

@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="{{ asset('admin/all.css') }}">
     <link rel="stylesheet" href="{{ asset('admin/style.css') }}">
     <link rel="stylesheet" href="{{ asset('admin/components.css') }}">
+
+    <link rel="stylesheet" href="{{ asset('css/bootstrap5.3.3.min.css') }}">
 </head>
 
 <body>
@@ -26,6 +28,7 @@
     <script src="{{ asset('admin/jquery.nicescroll.min.js') }}"></script>
     <script src="{{ asset('admin/scripts.js') }}"></script>
     <script src="{{ asset('admin/custom.js') }}"></script>
+    <script src="{{ asset('js/bootstrap5.3.3.bundle.min.js') }}"></script>t
 </body>
 
 </html>

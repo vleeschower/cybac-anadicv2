@@ -1,9 +1,14 @@
 <?php
 
+use App\Http\Controllers\Administrador\NoticiasController;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\NewsController;
 use App\Http\Controllers\WebController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -23,10 +28,22 @@ Route::get('/', [App\Http\Controllers\WebController::class, 'index'])->name('ind
 
 Route::get('/quienes_somos',[WebController::class,'quienes_somos'])->name('quienes_somos');
 
-Route::get('/noticias',[WebController::class,'noticias'])->name('noticias');
+// Route::get('/noticias',[WebController::class,'noticias'])->name('noticias');
 
 Route::get('/afiliados',[WebController::class,'afiliados'])->name('afiliados');
 
 Route::get('/contacto',[WebController::class,'contacto'])->name('contacto');
 
 Route::get('/registro',[WebController::class,'registro'])->name('registro');
+
+Route::get('/prueba',[WebController::class,'prueba'])->name('prueba');
+
+//visualizacion de texto-noticia
+Route::resource('noticias',NoticiasController::class);
+
+//ruta para el login 
+Route::get('/register',[RegisterController::class,'create'])->name('login');
+
+//ruta para el apartadp de registro
+Route::get('/login',[LoginController::class,'create'])->name('login');
+
