@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\RegistroMailable;
 use App\Models\Afiliados;
 use App\Models\Nosotros;
 use App\Models\Sliders;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class WebController extends Controller
 {
@@ -58,6 +60,11 @@ class WebController extends Controller
         return view('web.registro', [
             'title'     => 'ANADIC | AFILIACION'
         ]);
+    }
+
+    public function registro2(Request $request){
+        Mail::to('vleeschowerrr22@gmail.com')->send(new RegistroMailable($request->all()));
+        return "Mensaje enviado";
     }
 
     public function administrador()

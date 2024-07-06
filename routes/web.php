@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\RegistroController;
 use App\Http\Controllers\WebController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -30,5 +31,6 @@ Route::get('/afiliados',[WebController::class,'afiliados'])->name('afiliados');
 Route::get('/contacto',[WebController::class,'contacto'])->name('contacto');
 
 Route::get('/registro',[WebController::class,'registro'])->name('registro');
+Route::post('/registro', [WebController::class, 'registro2'])->name('registro2');
 
 Route::get('/administrador',[WebController::class,'administrador'])->name('administrador');

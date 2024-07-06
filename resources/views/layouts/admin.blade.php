@@ -27,7 +27,7 @@
                                     class="fa fa-search"></i></a></li>
                     </ul>
                     <div class="search-element">
-                        <input class="form-control" type="search" placeholder="Search" aria-label="Search"
+                        <input class="form-control" type="search" placeholder="Buscar" aria-label="Search"
                             data-width="250">
                         <button class="btn" type="submit"><i class="fa fa-search"></i></button>
                         <div class="search-backdrop"></div>
@@ -224,10 +224,10 @@
                     <li class="dropdown"><a href="#" data-toggle="dropdown"
                             class="nav-link dropdown-toggle nav-link-lg nav-link-user">
                             <i class="fa fa-user"></i>
-                            <div class="d-sm-none d-lg-inline-block"> Hi, Ujang Maman</div>
+                            <div class="d-sm-none d-lg-inline-block"> Administrador</div>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
-                            <div class="dropdown-title">Logged in 5 min ago</div>
+                            <div class="dropdown-title">Opciones</div>
                             <a href="features-profile.html" class="dropdown-item has-icon">
                                 <i class="fa fa-user"></i> Perfil
                             </a>
@@ -251,7 +251,7 @@
                         <a href="index.html">PANEL ADMINISTRATIVO</a>
                     </div>
                     <div class="sidebar-brand sidebar-brand-sm">
-                        <a href="index.html">PA</a>
+                        <a href="index.html">ANADIC</a>
                     </div>
                     <ul class="sidebar-menu">
                         <li class="menu-header">Dashboard</li>
@@ -413,7 +413,7 @@
 
                     <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
                         <a href="https://getstisla.com/docs" class="btn btn-primary btn-lg btn-block btn-icon-split">
-                            <i class="fas fa-rocket"></i> Documentation
+                            <i class="fa fa-rocket"></i> Documentation
                         </a>
                     </div>
                 </aside>

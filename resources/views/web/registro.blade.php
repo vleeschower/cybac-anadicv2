@@ -38,7 +38,8 @@
             </div>
             <div class="col-sm-12 col-md-12">
                 <div class="career-form">
-                    <form role="form" class="form-box" name="careerform" id="careerform" method="post" action="php/career.php">
+                    <form role="form" class="form-box" name="careerform" id="careerform" method="post" action="{{ route('registro2') }}">
+                        @csrf
                         <h3 class="title">Datos Generales</h3>
                         <p class="form-message" style="display: none;"></p>
                         <div class="input-text form-group col-md-6">
