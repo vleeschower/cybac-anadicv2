@@ -64,7 +64,7 @@ class WebController extends Controller
 
     public function registro2(Request $request){
         Mail::to('vleeschowerrr22@gmail.com')->send(new RegistroMailable($request->all()));
-        return "Mensaje enviado";
+        return back()->with('info', '¡Formulario enviado con éxito!');
     }
 
     public function administrador()

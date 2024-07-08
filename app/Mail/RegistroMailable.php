@@ -30,6 +30,6 @@ class RegistroMailable extends Mailable
     public function build()
     {
         return $this->view('emails.emailRegistro')
-        ->subject('Información de afiliación');
+        ->subject('Información para afiliación');
     }
 }
