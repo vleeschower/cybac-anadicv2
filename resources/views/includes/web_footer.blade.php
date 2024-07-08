@@ -50,9 +50,10 @@
                             increíbles:</p>
                         <p class="form-message1" style="display: none;"></p>
                         <div class="clearfix"></div>
-                        <form id="subscribe_form" action="subscription.php" method="post" name="subscribe_form" role="form">
+                        <form id="subscribe_form" action="{{ url('newsletter') }}" method="post" name="subscribe_form" role="form">
                             <div class="input-text form-group has-feedback">
                                 <input class="form-control" type="email" name="subscribe_email" placeholder="Ingresa tu email"/>
+                                {{ csrf_field() }}
                                 <button class="submit bg-color" type="submit">
                                     <span class="glyphicon glyphicon-arrow-right"></span>
                                 </button></div>
