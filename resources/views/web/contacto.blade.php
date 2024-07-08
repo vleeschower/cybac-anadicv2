@@ -62,7 +62,22 @@
 <section id="contact-form" class="page-section bg-light py-5">
     <div class="container col-lg-8">
         <h2 class="text-center mb-4">Únete</h2>
-        <form>
+        <div class="container mt-5">
+            @if($message = Session::get('success'))
+                <div class="alert alert-success alert-dismissible">
+                        <strong>{{ $message }}</strong>
+                </div>
+            @endif
+
+            @if($message = Session::get('error'))
+                <div class="alert alert-danger alert-dismissible">
+                        <strong>{{ $message }}</strong>
+                </div>
+            @endif
+
+        </div>
+        <form action="{{ route('contacto') }}" method="POST">
+            @csrf
             <div class="mb-3">
                 <label for="nombre" class="form-label">Nombre</label>
                 <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Introduzca su nombre completo">

@@ -3,10 +3,12 @@
 use App\Http\Controllers\Administrador\NoticiasController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\MailController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\WebController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+
 
 
 
@@ -32,7 +34,12 @@ Route::get('/quienes_somos',[WebController::class,'quienes_somos'])->name('quien
 
 Route::get('/afiliados',[WebController::class,'afiliados'])->name('afiliados');
 
-Route::get('/contacto',[WebController::class,'contacto'])->name('contacto');
+//solo puede haber un metodo get para controlar la ruta de contacto
+// Route::get('/contacto',[WebController::class,'contacto'])->name('contacto');
+
+//rutas para el envio de emailsPHPMailer
+Route::get('/contacto',[MailController::class, 'emailsPHPMiller'])->name('contacto');
+Route::post('/contacto',[MailController::class, 'storeEmails'])->name('contacto');
 
 Route::get('/registro',[WebController::class,'registro'])->name('registro');
 
