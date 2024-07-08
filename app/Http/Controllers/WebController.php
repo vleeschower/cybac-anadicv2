@@ -72,4 +72,9 @@ class WebController extends Controller
         return view('auth.login');
     }
 
+    public function prueba()
+    {
+        return view('web.prueba');
+    }
+
 }

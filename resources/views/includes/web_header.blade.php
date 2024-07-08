@@ -1,9 +1,10 @@
 <div id="pageloader">
     <div class="loader-item fa fa-spin text-color"></div>
 </div>
-<div id="top-bar" class="top-bar-section top-bar-bg-color">
-    <div class="container">
+<div id="top-bar" class="top-bar-section top-bar-bg-color text-white py-3">
+    <div class="container-fluid">
         <div class="row">
+<<<<<<< HEAD
             <div class="col-sm-12">
                 <div class="top-contact link-hover-black">
                     <a href="#">
@@ -11,21 +12,115 @@
                     </a>
                     <a href="#">
                         <i class="fa fa-envelope"></i> contacto@anadicchiapas.com.mx
+=======
+                <div id="top-bar" class="">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="top-contact link-hover-black">
+                                    <a href="#">
+                                        <i class="fa fa-phone"></i>01(961)6112500
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa fa-envelope"></i>contacto@anadicchiapas.com.mx
+                                    </a>
+                                </div>
+                                <div class="top-social-icon icons-hover-black">
+                                    <a href="https://www.facebook.com/Anadic-Chiapas-361691821041400">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <a href="https://twitter.com/AnadicChiapas">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            {{-- <div class="col d-flex justify-content-between align-items-center">
+
+                <div class="top-contact d-flex">
+                    <a href="tel:019616112500" class="d-flex align-items-center text-white me-3">
+                        <i class="fa fa-phone me-2"></i>01(961)6112500
+                    </a>
+
+                    <a href="mailto:contacto@anadicchiapas.com.mx" class="d-flex align-items-center text-white">
+                        <i class="fa fa-envelope me-2"></i>contacto@anadicchiapas.com.mx
+>>>>>>> pruebas-bootstrasp
                     </a>
                 </div>
-                <div class="top-social-icon icons-hover-black">
-                    <a href="https://www.facebook.com/Anadic-Chiapas-361691821041400">
+                
+                <div class="top-social-icon d-flex">
+                    <a href="https://www.facebook.com/Anadic-Chiapas-361691821041400" class="text-white me-3">
                         <i class="fa fa-facebook"></i>
                     </a>
-                    <a href="https://twitter.com/AnadicChiapas">
+                    <a href="https://twitter.com/AnadicChiapas" class="text-white">
                         <i class="fa fa-twitter"></i>
                     </a>
                 </div>
-            </div>
+
+                <a class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="#">
+                    <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"></use></svg>
+                    Icon link
+                </a>
+                
+            </div> --}}
         </div>
     </div>
 </div>
-<header id="sticker" class="sticky-navigation">
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary text-left">
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="{{ route('index') }}">
+            <img class="site_logo" alt="Site Logo" width="auto" height="auto" src="{{ asset('img/logob.png') }}" />
+        </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      {{-- modifificar estrucutra en este espacio de la barra de navegacion principal --}}
+      <div class="collapse navbar-collapse nav justify-content-end " id="navbarNavDropdown"  >
+
+        {{-- modificar en style2 y en este espacio diseño de la barra de navegacion principal --}}
+        <ul class="nav nav-pills" ">
+
+          <li class="nav-item boton-margen-BarraNav" "> 
+            <a class="nav-link active" aria-current="page" href="{{ route('index') }}">Inicio</a>
+          </li>
+
+          <li class="nav-item boton-margen-BarraNav" >
+            <a class="nav-link" href="{{ route('quienes_somos') }}">¿Quienes Somos?</a>
+          </li>
+
+          <li class="nav-item boton-margen-BarraNav">
+            <a class="nav-link" href="{{ route('noticias.index') }}">Noticias</a>
+          </li>
+
+          <li class="nav-item boton-margen-BarraNav" ">
+            <a class="nav-link" href="{{ route('afiliados') }}">Afiliados</a>
+          </li>
+
+          <li class="nav-item boton-margen-BarraNav" ">
+            <a class="nav-link" href="{{ route('contacto') }}">Contacto</a>
+          </li>
+
+          <li class="nav-item boton-margen-BarraNav" ">
+            <a class="nav-link" href="{{ route('prueba') }}">Prueba</a>
+          </li>
+          
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+  
+{{-- <header id="sticker" class="sticky-navigation">
     <div class="sticky-menu relative">
         <div class="navbar navbar-default navbar-bg-light" role="navigation">
             <div class="container">
@@ -58,7 +153,14 @@
                                 </li>
                                 <li>
                                     <a href="{{ route('contacto') }}">Contacto</a>
-                                </li>                                
+                                </li> 
+
+                                vista de prueba
+                                
+                                <li>
+                                    <a href="{{ ('prueba') }}">Prueba</a>
+                                </li>
+
                             </ul>
                             <div class="bg-white hide-show-content no-display header-contact-content">
                                 <p class="vertically-absolute-middle">Call Us
@@ -105,4 +207,4 @@
             </div>
         </div>
     </div>
-</header>
+</header> --}}
