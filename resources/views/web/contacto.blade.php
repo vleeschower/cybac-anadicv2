@@ -63,16 +63,24 @@
     <div class="container col-lg-8">
         <h2 class="text-center mb-4">Únete</h2>
         <div class="container mt-5">
-            @if($message = Session::get('success'))
-                <div class="alert alert-success alert-dismissible">
-                        <strong>{{ $message }}</strong>
-                </div>
+            @if (session('success'))
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script>
+                swal("Mensaje", "{{ session('success') }}", 'success', {
+                button: "OK",
+                timer:5000,
+                });
+            </script>
             @endif
 
-            @if($message = Session::get('error'))
-                <div class="alert alert-danger alert-dismissible">
-                        <strong>{{ $message }}</strong>
-                </div>
+            @if (session('error'))
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script>
+                swal("Mensaje", "{{ session('error') }}", 'error', {
+                button: "OK",
+                timer:5000,
+                });
+            </script>
             @endif
 
         </div>
