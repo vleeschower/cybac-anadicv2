@@ -5,8 +5,8 @@
     @foreach ($slider as $item) 
         @if($item->tipo == "1")
             <div class="ls-slide" data-ls="bgsize:cover; bgposition:50% 50%; duration:4000; transition2d:104; kenburnsscale:1.00;">
-                <img src="{{ asset('img/slider/'.$item->imagen) }}" class="ls-bg" alt=""/>
-                <img src="{{ asset('img/slider/'.$item->imagen) }}" class="ls-tn" alt="Slide thumbnail">
+                <img src="{{ asset('img/slider/'.$item->imagen) }}" class="img-fluid ls-bg" alt=""/>
+                <img src="{{ asset('img/slider/'.$item->imagen) }}" class="img-fluid ls-tn" alt="Slide thumbnail">
             </div>
         @else
             <div class="ls-slide" data-ls="bgsize:cover; bgposition:50% 50%; transition2d:104; kenburnsscale:1.00;">                
@@ -14,7 +14,7 @@
                     $image = pathinfo($item->imagen);
                 @endphp
                 <div class="ls-l" data-ls="backgroundvideo:false;autoplay:true;controls:false;showinfo:false;poster:https://img.youtube.com/vi/<?=$image['filename']?>/hqdefault.jpg;">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/{{ $image['filename'] }}?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+                    <iframe class="img-fluid" width="100%" height="100%" src="https://www.youtube.com/embed/{{ $image['filename'] }}?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
         @endif 
