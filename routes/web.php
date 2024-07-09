@@ -24,7 +24,7 @@ Route::get('/', [App\Http\Controllers\WebController::class, 'index'])->name('ind
 
 Route::get('/quienes_somos',[WebController::class,'quienes_somos'])->name('quienes_somos');
 
-//Route::get('/noticias',[WebController::class,'noticias'])->name('noticias');
+Route::get('/noticias',[WebController::class,'noticias'])->name('noticias');
 
 Route::get('/afiliados',[WebController::class,'afiliados'])->name('afiliados');
 
