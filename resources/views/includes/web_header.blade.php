@@ -4,7 +4,6 @@
 <div id="top-bar" class="top-bar-section top-bar-bg-color text-white py-3">
     <div class="container-fluid">
         <div class="row">
-<<<<<<< HEAD
             <div class="col-sm-12">
                 <div class="top-contact link-hover-black">
                     <a href="#">
@@ -12,44 +11,6 @@
                     </a>
                     <a href="#">
                         <i class="fa fa-envelope"></i> contacto@anadicchiapas.com.mx
-=======
-                <div id="top-bar" class="">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="top-contact link-hover-black">
-                                    <a href="#">
-                                        <i class="fa fa-phone"></i>01(961)6112500
-                                    </a>
-                                    <a href="#">
-                                        <i class="fa fa-envelope"></i>contacto@anadicchiapas.com.mx
-                                    </a>
-                                </div>
-                                <div class="top-social-icon icons-hover-black">
-                                    <a href="https://www.facebook.com/Anadic-Chiapas-361691821041400">
-                                        <i class="fa fa-facebook"></i>
-                                    </a>
-                                    <a href="https://twitter.com/AnadicChiapas">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-
-            {{-- <div class="col d-flex justify-content-between align-items-center">
-
-                <div class="top-contact d-flex">
-                    <a href="tel:019616112500" class="d-flex align-items-center text-white me-3">
-                        <i class="fa fa-phone me-2"></i>01(961)6112500
-                    </a>
-
-                    <a href="mailto:contacto@anadicchiapas.com.mx" class="d-flex align-items-center text-white">
-                        <i class="fa fa-envelope me-2"></i>contacto@anadicchiapas.com.mx
->>>>>>> pruebas-bootstrasp
                     </a>
                 </div>
                 
@@ -61,16 +22,12 @@
                         <i class="fa fa-twitter"></i>
                     </a>
                 </div>
-
-                <a class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="#">
-                    <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"></use></svg>
-                    Icon link
-                </a>
-                
-            </div> --}}
+    
+            </div>
         </div>
     </div>
 </div>
+
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary text-left">
     <div class="container-fluid">

@@ -2,13 +2,10 @@
 
 use App\Http\Controllers\Administrador\NoticiasController;
 use App\Http\Controllers\Auth\LoginController;
-<<<<<<< HEAD
 use App\Http\Controllers\RegistroController;
-=======
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\MailController;
 use App\Http\Controllers\NewsController;
->>>>>>> pruebas-bootstrasp
 use App\Http\Controllers\WebController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -46,11 +43,9 @@ Route::get('/contacto',[MailController::class, 'emailsPHPMiller'])->name('contac
 Route::post('/contacto',[MailController::class, 'storeEmails'])->name('contacto');
 
 Route::get('/registro',[WebController::class,'registro'])->name('registro');
-<<<<<<< HEAD
 Route::post('/registro', [WebController::class, 'registro2'])->name('registro2');
 
 Route::get('/administrador',[WebController::class,'administrador'])->name('administrador');
-=======
 
 Route::get('/prueba',[WebController::class,'prueba'])->name('prueba');
 
@@ -63,4 +58,3 @@ Route::get('/register',[RegisterController::class,'create'])->name('login');
 //ruta para el apartadp de registro
 Route::get('/login',[LoginController::class,'create'])->name('login');
 
->>>>>>> pruebas-bootstrasp
