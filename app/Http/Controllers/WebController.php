@@ -93,7 +93,7 @@ class WebController extends Controller
         try {
             if (!$this->newsletter->isSubscribed($user_email)) {
                 $this->newsletter->subscribePending($user_email);
-                return back()->with('info', '¡Listo! Revisa tu email para confirmar tu suscripción');
+                return back()->with('info', 'Revisa tu email para confirmar tu suscripción');
             } else {
                 return back()->with('info2', '¡Ya estás suscrito!');
             }

@@ -101,7 +101,7 @@
 
 @if (session('success'))
 <script>
-    swal("Mensaje", "{{ session('success') }}", 'success', {
+    swal("¡Listo!", "{{ session('success') }}", 'success', {
         button: "OK",
         timer:5000,
     });

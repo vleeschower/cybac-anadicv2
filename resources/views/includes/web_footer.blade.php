@@ -93,14 +93,14 @@
 
 @if (session('info'))
     <script>
-        swal("Mensaje", "{{ session('info') }}", 'success', {
+        swal("¡Listo!", "{{ session('info') }}", 'success', {
             button: "OK",
             timer: 5000,
         });
     </script>
 @elseif (session('info2'))
     <script>
-        swal("Mensaje", "{{ session('info2') }}", 'info', {
+        swal("¡Listo!", "{{ session('info2') }}", 'info', {
             button: "OK",
             timer: 5000,
         });
