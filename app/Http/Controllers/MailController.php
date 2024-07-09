@@ -30,7 +30,7 @@ class MailController extends Controller
             $email = htmlspecialchars($request->input('email'));
             $phone = htmlspecialchars($request->input('telefono'));
             $message = htmlspecialchars($request->input('mensaje'));
-            //Create an instance; passing `true` enables exceptions 
+            //Create an instance; passing true enables exceptions 
             $mail = new PHPMailer(true);
             //Server settings SMTP
             $mail->SMTPDebug = 0;                                  //Enable verbose debug output
@@ -40,7 +40,7 @@ class MailController extends Controller
             $mail->Username   = env('MAIL_USERNAME');              //SMTP username
             $mail->Password   = env('MAIL_PASSWORD');              //SMTP password
             $mail->SMTPSecure = env('MAIL_ENCRYPTION');            //Enable implicit TLS encryption
-            $mail->Port       = env('MAIL_PORT');                  //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+            $mail->Port       = env('MAIL_PORT');                  //TCP port to connect to; use 587 if you have set SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS
         
             //Recipients
             $mail->setFrom(env('MAIL_FROM_ADDRESS'),env('MAIL_FROM_NAME'));     // Dirección del remitente
@@ -61,7 +61,7 @@ class MailController extends Controller
             // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
             $mail->Subject = 'Nuevo mensaje de contacto';
             $mail->Body = "
-                <h1>Nuevo mensaje de contacto</h1>
+                <h1>Mensaje de contacto</h1>
                 <p><strong>Nombre:</strong> {$request->nombre}</p>
                 <p><strong>Teléfono:</strong> {$request->telefono}</p>
                 <p><strong>Correo Electrónico:</strong> {$request->email}</p>
@@ -79,9 +79,9 @@ class MailController extends Controller
         //     return back()->with('error','Message cound not be sent.');
         // }
         $mail->send();
-            return back()->with('success', 'Email has been sent.');
+            return back()->with('success', 'El mensaje ha sido enviado con éxito');
         } catch (Exception $e) {
-            return back()->with('error', 'Message could not be sent. Mailer Error: '.$mail->ErrorInfo);
+            return back()->with('error', 'No se pudo enviar el mensaje. Mailer Error: '.$mail->ErrorInfo);
         }
     }
 }

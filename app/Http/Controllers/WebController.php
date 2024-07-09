@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Mail\RegistroMailable;
-use App\Models\Afiliados;
-use App\Models\Nosotros;
 use App\Models\Sliders;
+use App\Models\Nosotros;
+use App\Models\Afiliados;
 use Illuminate\Http\Request;
+use App\Mail\RegistroMailable;
+use Exception;
+use Spatie\Newsletter\Newsletter;
 use Illuminate\Support\Facades\Mail;
 
 class WebController extends Controller
@@ -62,9 +64,14 @@ class WebController extends Controller
         ]);
     }
 
-    public function registro2(Request $request){
-        Mail::to('vleeschowerrr22@gmail.com')->send(new RegistroMailable($request->all()));
-        return back()->with('info', '¡Formulario enviado con éxito!');
+    public function registro2(Request $request)
+    {
+        try {
+            Mail::to('vleeschowerrr22@gmail.com')->send(new RegistroMailable($request->all()));
+            return back()->with('info', '¡Formulario enviado con éxito!');
+        } catch (Exception $e) {
+            return back()->with('error2', 'Hubo un problema al enviar el formulario. Por favor, inténtalo de nuevo más tarde.');
+        }
     }
 
     public function administrador()
@@ -72,9 +79,26 @@ class WebController extends Controller
         return view('auth.login');
     }
 
-    public function prueba()
+    protected $newsletter;
+
+    public function __construct(Newsletter $newsletter)
     {
-        return view('web.prueba');
+        $this->newsletter = $newsletter;
     }
 
+    public function subscribe(Request $request)
+    {
+        $user_email = $request->input('subscribe_email');
+
+        try {
+            if (!$this->newsletter->isSubscribed($user_email)) {
+                $this->newsletter->subscribePending($user_email);
+                return back()->with('info', 'Revisa tu email para confirmar tu suscripción');
+            } else {
+                return back()->with('info2', '¡Ya estás suscrito!');
+            }
+        } catch (Exception $e) {
+            return back()->with('error', 'Hubo un problema al procesar tu suscripción. Por favor, inténtalo de nuevo más tarde.');
+        }
+    }
 }
