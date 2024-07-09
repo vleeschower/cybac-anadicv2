@@ -50,10 +50,10 @@
                             increíbles:</p>
                         <p class="form-message1" style="display: none;"></p>
                         <div class="clearfix"></div>
-                        <form id="subscribe_form" action="{{ url('newsletter') }}" method="post" name="subscribe_form" role="form">
+                        <form id="subscribe_form" action="{{ route('subscribe') }}" method="post" name="subscribe_form" role="form">
                             <div class="input-text form-group has-feedback">
                                 <input class="form-control" type="email" name="subscribe_email" placeholder="Ingresa tu email"/>
-                                {{ csrf_field() }}
+                                @csrf
                                 <button class="submit bg-color" type="submit">
                                     <span class="glyphicon glyphicon-arrow-right"></span>
                                 </button></div>
@@ -90,4 +90,28 @@
             </div>
         </div>
     </div>
+
+@if (session('info'))
+    <script>
+        swal("Mensaje", "{{ session('info') }}", 'success', {
+            button: "OK",
+            timer: 5000,
+        });
+    </script>
+@elseif (session('info2'))
+    <script>
+        swal("Mensaje", "{{ session('info2') }}", 'info', {
+            button: "OK",
+            timer: 5000,
+        });
+    </script>
+@elseif (session('error'))
+    <script>
+        swal("Error", "{{ session('error') }}", 'error', {
+            button: "OK",
+            timer: 5000,
+        });
+    </script>
+@endif
+
 </footer>
