@@ -72,7 +72,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="telefono" class="form-label">Teléfono</label>
-                            <input type="text" name="telefono" id="telefono" class="form-control" placeholder="Introduzca su número telefónico" required>
+                            <input type="tel" name="telefono" id="telefono" class="form-control" placeholder="Introduzca su número telefónico" required>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Correo Electrónico</label>
