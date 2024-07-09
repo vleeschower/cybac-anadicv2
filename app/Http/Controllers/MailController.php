@@ -81,7 +81,7 @@ class MailController extends Controller
         $mail->send();
             return back()->with('success', 'El mensaje ha sido enviado con éxito');
         } catch (Exception $e) {
-            return back()->with('error', 'Message could not be sent. Mailer Error: '.$mail->ErrorInfo);
+            return back()->with('error', 'No se pudo enviar el mensaje. Mailer Error: '.$mail->ErrorInfo);
         }
     }
 }
