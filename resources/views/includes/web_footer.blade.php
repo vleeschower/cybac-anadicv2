@@ -52,7 +52,7 @@
                         <div class="clearfix"></div>
                         <form id="subscribe_form" action="{{ route('subscribe') }}" method="post" name="subscribe_form" role="form">
                             <div class="input-text form-group has-feedback">
-                                <input class="form-control" type="email" name="subscribe_email" placeholder="Ingresa tu email"/>
+                                <input class="form-control" type="email" name="subscribe_email" placeholder="Ingresa tu email" required/>
                                 @csrf
                                 <button class="submit bg-color" type="submit">
                                     <span class="glyphicon glyphicon-arrow-right"></span>
