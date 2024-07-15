@@ -192,6 +192,31 @@
     color: #000000;
 }
 
+/* nuevos estilos */
+.card-title-new {
+    font-size: 1.25rem;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.page-header .title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.lead {
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+
+
 body {
   font-family: 'Arimo', sans-serif;
   height: 100%;

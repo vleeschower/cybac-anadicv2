@@ -1,81 +1,80 @@
-<div id="pageloader">
-    <div class="loader-item fa fa-spin text-color"></div>
-</div>
-<div id="top-bar" class="top-bar-section top-bar-bg-color text-white py-3">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="top-contact link-hover-black">
-                    <a href="#">
-                        <i class="fa fa-phone"></i> 01(961)6112500
-                    </a>
-                    <a href="#">
-                        <i class="fa fa-envelope"></i> contacto@anadicchiapas.com.mx
-                    </a>
+<header>
+    <div id="pageloader">
+        <div class="loader-item fa fa-spin text-color"></div>
+    </div>
+
+    <div id="top-bar" class="top-bar-section top-bar-bg-color text-white py-3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="top-contact link-hover-black">
+                        <a href="#">
+                            <i class="fa fa-phone"></i> 01(961)6112500
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-envelope"></i> contacto@anadicchiapas.com.mx
+                        </a>
+                    </div>
+                    
+                    <div class="top-social-icon d-flex">
+                        <a href="https://www.facebook.com/Anadic-Chiapas-361691821041400" class="text-white me-3">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/AnadicChiapas" class="text-white">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </div>
+        
                 </div>
-                
-                <div class="top-social-icon d-flex">
-                    <a href="https://www.facebook.com/Anadic-Chiapas-361691821041400" class="text-white me-3">
-                        <i class="fa fa-facebook"></i>
-                    </a>
-                    <a href="https://twitter.com/AnadicChiapas" class="text-white">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                </div>
-    
             </div>
         </div>
     </div>
-</div>
 
+    <nav class="navbar navbar-expand-lg bg-body-tertiary text-left">
+        <div class="container-fluid">
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary text-left">
-    <div class="container-fluid">
+            <a class="navbar-brand" href="{{ route('index') }}">
+                <img class="site_logo" alt="Site Logo" width="auto" height="auto" src="{{ asset('img/logob.png') }}" />
+            </a>
 
-        <a class="navbar-brand" href="{{ route('index') }}">
-            <img class="site_logo" alt="Site Logo" width="auto" height="auto" src="{{ asset('img/logob.png') }}" />
-        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        {{-- modifificar estrucutra en este espacio de la barra de navegacion principal --}}
+        <div class="collapse navbar-collapse nav justify-content-end " id="navbarNavDropdown"  >
 
-      {{-- modifificar estrucutra en este espacio de la barra de navegacion principal --}}
-      <div class="collapse navbar-collapse nav justify-content-end " id="navbarNavDropdown"  >
+            {{-- modificar en style2 y en este espacio diseño de la barra de navegacion principal --}}
+            <ul class="nav nav-pills" ">
 
-        {{-- modificar en style2 y en este espacio diseño de la barra de navegacion principal --}}
-        <ul class="nav nav-pills" ">
+            <li class="nav-item boton-margen-BarraNav" "> 
+                <a class="nav-link active" aria-current="page" href="{{ route('index') }}">Inicio</a>
+            </li>
 
-          <li class="nav-item boton-margen-BarraNav" "> 
-            <a class="nav-link active" aria-current="page" href="{{ route('index') }}">Inicio</a>
-          </li>
+            <li class="nav-item boton-margen-BarraNav" >
+                <a class="nav-link" href="{{ route('quienes_somos') }}">¿Quienes Somos?</a>
+            </li>
 
-          <li class="nav-item boton-margen-BarraNav" >
-            <a class="nav-link" href="{{ route('quienes_somos') }}">¿Quienes Somos?</a>
-          </li>
+            <li class="nav-item boton-margen-BarraNav">
+                <a class="nav-link" href="{{ route('noticias.index') }}">Noticias</a>
+            </li>
 
-          <li class="nav-item boton-margen-BarraNav">
-            <a class="nav-link" href="{{ route('noticias.index') }}">Noticias</a>
-          </li>
+            <li class="nav-item boton-margen-BarraNav" ">
+                <a class="nav-link" href="{{ route('afiliados') }}">Afiliados</a>
+            </li>
 
-          <li class="nav-item boton-margen-BarraNav" ">
-            <a class="nav-link" href="{{ route('afiliados') }}">Afiliados</a>
-          </li>
+            <li class="nav-item boton-margen-BarraNav" ">
+                <a class="nav-link" href="{{ route('contacto') }}">Contacto</a>
+            </li>
 
-          <li class="nav-item boton-margen-BarraNav" ">
-            <a class="nav-link" href="{{ route('contacto') }}">Contacto</a>
-          </li>
+            </ul>
 
-          <li class="nav-item boton-margen-BarraNav" ">
-            <a class="nav-link" href="{{ route('prueba') }}">Prueba</a>
-          </li>
-          
-        </ul>
+        </div>
 
-      </div>
+        </div>
+    </nav> 
+</header>
 
-    </div>
-  </nav>
   
 {{-- <header id="sticker" class="sticky-navigation">
     <div class="sticky-menu relative">
