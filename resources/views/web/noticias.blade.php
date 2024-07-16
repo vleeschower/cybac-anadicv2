@@ -19,17 +19,18 @@
 </header>
 
 
-<section id="notice" class="page-section">
+<section id="notice" class="page-section py-5">
     <div class="container">
         <h1>Noticias</h1>
         <div class="row">
             @foreach ($news as $new)
                 <div class="col-md-5 col-lg-3 mb-3">
-                    <div class="card">
+                    <div class="card h-100">
                         <img src="{{ asset('img/noticias/' . $new->imagen) }}" class="card-img-top" alt="{{ $new->titulo }}">
                         <div class="card-body">
                             <h5 class="title font-weight-bold">{{ $new->titulo }}</h5>
                             <p class="card-text">{{ Str::limit($new->contenido, 150) }}</p>
+                            <p class="card-text"><small class="text-muted">Publicado el {{ $new->created_at->format('d M, Y') }}</small></p>
                             <a href="{{ route('noticias.show', $new->id) }}" class="btn btn-primary">Leer más</a>
                         </div>
                     </div>

@@ -6,6 +6,10 @@ Route::name('adm.')->namespace('Administrador')->prefix('panel_anadic')->middlew
     Route::get('/', function(){
         return view('dashboard');
     })->name('index');
+
+    Route::get('/pagina_inicio', function(){
+        return view('admin.inicio');
+    })->name('inicio');
 });
 
 ?>
